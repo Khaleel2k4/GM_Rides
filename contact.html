@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity=""
+        crossorigin="anonymous" referrerpolicy="no-refferrer" />
+    <title>GM Travels</title>
+</head>
+
+<body>
+    <!---Nav Bar--->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>GM <b class="accent">Rides</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close btn"></i>
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="collection.html">CARS</a>
+            <a href="index.html#about">ABOUT</a>
+        </div>
+
+        <button class="btn-2" onclick="Window.location.href='contact.html'">
+            Get Started
+        </button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+    <!---Nav Bar Ends--->
+    
+    <!-- contact section starts -->
+     <section class="contact">
+        <h1>Get in Touch for Your Dream Ride!</h1>
+        <p>
+            Have question or need assistance? Our team is here to help you find the perfect car for your adventure 
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace With Your Access Key -->
+             <input type="hidden" name="acces_key" value="PUT_YOUR_ACCESS_KEY_HERE">
+
+             <div class="car-select">
+                <div class="car-select-item">
+                    <label for="location">Location</label>
+                    <select 
+                    name="location" 
+                    class="car-select-input" 
+                    id="location">
+                    <option value="Callfornia">California</option>
+                    <option value="Callfornia">California</option>
+                    <option value="Callfornia">California</option>
+                    <option value="Callfornia">California</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="car-type">Location</label>
+                    <select 
+                    name="car-type" 
+                    class="car-select-input" 
+                    id="location">
+                    <option value="Mercedes-AMG GT R">Mercedes-AMG GT R</option>
+                    <option value="Lanborghin Venemo">Lanborghin Venemo</option>
+                    <option value="Rolls Royce Dawn">Rolls Royce Dawn</option>
+                    <option value="Toyato 86 - Coupe">Toyato 86 - Coupe</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="date">Dae:</label>
+                    <input type="date" id="date" name="date" class="car-select-input">
+                </div>
+             </div>
+
+             <div class="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="phone" name="phone" placeholder="phone" required>
+                <button type="submit" class="btn-2">Submit</button>
+             </div>
+        </form>
+     </section>
+    <!-- contact section end -->
+
+    <!-- Fotter Section -->
+    <footer class="contact-footer">
+        <div class="callout">
+            <h2>Let's Drive With GM Rides Today!</h2>
+            <p class="callout-description">
+                Need assistance or ready to reserve your wheels? Contact us now for
+                prompt service and effortless booking!
+            </p>
+
+            <div class="callout-button">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+
+                    <p>Check our Cars</p>
+                    <i class="fa-solid fa-arrow-right-back"></i>
+                </button>
+
+                <button class="btn-2 btn-callout btn-callout" onclick="window.location.href='contact.html'">
+
+                    <p>Book Now</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-button">
+            <a href="/" class="footer-brand">GM <b class="accent">Rides</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Fotter Section End-->
+</body>
+
+</html>
